@@ -622,10 +622,6 @@
         display: flex;
         color: #fff;
     }
-    .checkIcon{
-        margin-top: 5px;
-        margin-right: 5px;
-    }
 
 /* footer section */
     footer{
@@ -654,6 +650,7 @@
         footer{
             grid-template-columns: repeat(3,1fr);
         }
+        
     }
     .brandTag,.citiesHed ,.contactHed{
         text-align: center;
@@ -679,14 +676,30 @@
         height: fit-content;
         width: fit-content;
     }
+    .footerCityList{
+        display: grid;
+    }
+    @media screen and (max-width:750px) {
+        .footerCityList{
+            grid-template-columns: repeat(2,1fr);
+            gap: 5px;
+            /* place-content: center; */
+        }
+        .mumbai{
+            grid-column: 1/3;
+            align-items: center;
+            justify-content: center;
+        }
+    }
     .footerCityList li{
         display: flex;
+        gap: 3px;
         align-items: center;
         color: #fff;
     }
-    .footerCityList li:not(.lastCity){
+    /* .footerCityList li:not(.lastCity){
         margin-bottom: 5px;
-    }
+    } */
     .contact{
         display: flex;
         justify-content: center;
