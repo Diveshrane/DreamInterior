@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration form</title>
+    <link href="./output.css" rel="stylesheet">
+    <link rel="stylesheet" href="input.css"> <!-- main style sheet -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- navigaition bar -->
+    <nav class="navBar text-white " id="navBar">
+        <div class="logo">
+            <div class="brandText">
+                <H1 class="text-[#73946B] font-bold">DREAM</H1>
+                <H1 >INTERIOR.</H1>
+            </div>
+            <div id="hamb" class="ham">
+                <div id="firstLine" class="hamLine firstLine"></div>
+                <div id="secondLine" class="hamLine secondLine"></div>
+            </div>
+        </div>
+        <div class="sectionList" id="sectionList">
+            <ul class="navList">
+                <li class ="closeHamb" ><a href="/src/index.html#home" class="design uppercase ">Home</a></li>
+                <li class ="closeHamb" ><a href="/src/index.html#ourDesign" class="design uppercase ">Designs</a></li>
+                <li class ="closeHamb" ><a href="/src/index.html#hiw" class="HowTiWorks uppercase">How it works</a></li>
+                <li class ="closeHamb" ><a href="refferEarn.html" class="referNEarn uppercase ">Refer & Earn</a></li>
+                <li id="cityList" class="cityList">
+                    <a class="cityListHed uppercase">Cites <p id="DropDownIcon" class="DropDownIcon">></p></a><br>
+                    <div id="dropDown" class="dropDown">
+                        <h1  class="cityHed">Available</h1>
+                        <p  class="city">Mumbai</p>
+                        <h1  class="cityHed">Coming Soon</h1>
+                        <p  class="city">Pune</p>
+                        <p  class="city">Delhi</p>
+                    </div>
+                </li>
+                <li class ="closeHamb"><a href="/src/index.html#about" class="aboutUs uppercase">About us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <div class="formSec">
+        <form name="submit-to-google-sheet" id="formBox" action="#">
+            <div id="formContaint">
+                <div class="containtGrp">
+                    <h1 id="formHed">Registration</h1>
+                    <div class="formGroup">
+                        <input class="formInp" id="nameInp" name="name" type="text" required>
+                        <label for="">name*</label>
+                    </div>
+                    <div class="formGroup">
+                        <input class="formInp" id="phoneInp" name="phone" type="number" required>
+                        <label for="">phone*</label>
+                    </div>
+                    <div class="formGroup">
+                        <input class="formInp" id="emailInp" name="email" type="email text" required>
+                        <label for="">email*</label>
+                    </div>
+                    <div class="formSubmitBtnSec">
+                        <button class="formSubmitBtn" id="formSubmitBtn" type="submit">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </form>     
+    </div>
+    <script src="script.js">
+    </script>
+</body>
+</html>
