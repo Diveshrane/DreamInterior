@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration form</title>
+    <link href="./output.css" rel="stylesheet">
+    <link rel="stylesheet" href="input.css"> <!-- main style sheet -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- navigaition bar -->
+    <nav class="navBar text-white " id="navBar">
+        <div class="logo">
+            <div class="brandText poppins">
+                <h1><span class="dreamText">DREAM</span>  <br> INTERIOR.</h1>
+            </div>
+            <div id="hamb" class="ham">
+                <div id="firstLine" class="hamLine firstLine"></div>
+                <div id="secondLine" class="hamLine secondLine"></div>
+            </div>
+        </div>
+        <div class="sectionList" id="sectionList">
+            <ul class="navList">
+                <li class ="closeHamb" ><a href="/src/index.html#home" class="design uppercase ">Home</a></li>
+                <li class ="closeHamb" ><a href="/src/index.html#ourDesign" class="design uppercase ">Designs</a></li>
+                <li class ="closeHamb" ><a href="/src/index.html#hiw" class="HowTiWorks uppercase">How it works</a></li>
+                <li class ="closeHamb" ><a href="refferEarn.html" class="referNEarn uppercase ">Refer & Earn</a></li>
+                <li id="cityList" class="cityList">
+                    <a class="cityListHed uppercase">Cites <p id="DropDownIcon" class="DropDownIcon">></p></a><br>
+                    <div id="dropDown" class="dropDown">
+                        <h1  class="cityHed">Available</h1>
+                        <p  class="city">Mumbai</p>
+                        <h1  class="cityHed">Coming Soon</h1>
+                        <p  class="city">Pune</p>
+                        <p  class="city">Delhi</p>
+                    </div>
+                </li>
+                <li class ="closeHamb"><a href="/src/index.html#about" class="aboutUs uppercase">About us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- form section -->
+    <div class="formSec">
+        <form name="submit-to-google-sheet" id="formBox" action="#">
+            <div id="formContaint">
+                <div class="containtGrp">
+                    <h1 class="allHeading" id="formHed">Registration</h1>
+                    <div class="formGroup">
+                        <input class="formInp" id="nameInp" name="name" type="text" required>
+                        <label class="poppins registretionFormLbl" for="">Name*</label>
+                    </div>
+                    <div class="formGroup">
+                        <input class="formInp" id="phoneInp" name="phone" type="number" required>
+                        <label class="poppins registretionFormLbl" for="">Phone*</label>
+                    </div>
+                    <div class="formGroup">
+                        <input class="formInp" id="emailInp" name="email" type="email text" required>
+                        <label class="poppins registretionFormLbl" for="">Email*</label>
+                    </div>
+                    <div class="formSubmitBtnSec">
+                        <button id="formSubmitBtn" type="submit">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </form>     
+    </div>
+    <script src="script.js">
+    </script>
+    <script>
+        // registretion form
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzBFtLeAmUtRi8x0DxU2saRzWKjxYU_tVPVwhAeNFQh7uYoroFl-WSwu0m2JaBpCPiH/exec'
+    const form = document.forms['submit-to-google-sheet'];
+
+    const btn = document.getElementById('formSubmitBtn');
+    const nameInp = document.getElementById('nameInp');
+    const phoneInp = document.getElementById('phoneInp');
+    const emailInp = document.getElementById('emailInp')
+    const formHed = document.getElementById('formHed');
+    const formContaint = document.getElementById('formContaint');
+    const formLoadingAni = document.getElementById('formLoadingAni');
+    const formBox = document.getElementById('formBox');
+    const submitedParaSec = document.createElement('div');
+
+
+    //when client click on submit button
+    btn.addEventListener('click', () => {
+    let nameInpVal = nameInp.value;
+    let phoneInpVal = phoneInp.value;
+    let emailInpVal = emailInp.value;
+    
+    if (nameInpVal,phoneInpVal,emailInpVal === "" ) {
+        return;
+    } else {
+        //submiting animation
+        btn.innerHTML= `<div class="loadingio-spinner-spin-2by998twmg8"><div class="ldio-yzaezf3dcmj">
+        <div><div></div></div><div><div></div></div><div><div></div></div><div><div></div></div><div><div></div></div><div><div></div></div><div><div></div></div><div><div></div></div>
+        </div></div><h1>submiting</h1>`;
+    }
+    });
+
+    //when form submited
+    form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+
+        //submited animation (2s)
+        formContaint.innerHTML = `<div id="check-animation" class="check-animation">
+                    <svg id="submitedSvg" class="submitedSvg" viewBox="-100 -100 260 260">
+                        <circle class="circle" cx="26" cy="26"/>
+                        <path class="check" d="M16 27 L23 34 L36 20" />
+                    </svg>
+                    <h1 class="submitedText">Submited</h1>
+                </div>`;
+        form.reset();
+        setTimeout(() => 
+        {
+            //remove animated icon
+            formBox.style.backgroundColor = "#73946B";
+           let submitedSvg = document.getElementById('submitedSvg');
+           submitedSvg.remove();
+
+           //animatad 'Thank You' test (0.6s)
+           let checkAnimation = document.getElementById('check-animation');
+           let submitedHed = document.createElement('h1');   
+           submitedHed.textContent = "Thank You";
+           submitedHed.classList = "registrationDoneHed";
+           checkAnimation.appendChild(submitedHed);
+
+           //1st end typing animatad msg(1s)
+           setTimeout(() => {
+            submitedParaSec.classList = "registrationDoneParaSec";
+            
+            let submitedPara = document.createElement('p');
+            submitedPara.classList = "registrationDonePara";
+            submitedPara.textContent = "your registration is done successfully."
+            submitedParaSec.appendChild(submitedPara);
+            checkAnimation.appendChild(submitedParaSec);
+            }, 700);
+        
+            //2nd end typing animated msg(1s)
+            setTimeout(() => {
+                let submitedPara2 = document.createElement('p');
+                submitedPara2.classList = "registrationDonePara2";
+                submitedPara2.textContent = "our team will contact you within 24hr."
+
+                submitedParaSec.appendChild(submitedPara2);
+            }, 1800);
+
+            //back button animation(0,7s)
+            setTimeout(() => {
+                let completeBtn = document.createElement('a');
+                completeBtn.classList = "completeBtn";
+                completeBtn.textContent = "Back To Home"
+                completeBtn.setAttribute('href','/src/index.html#home');
+                checkAnimation.appendChild(completeBtn);
+
+            }, 3000);
+        }, 2000);
+      })
+      .catch(error => console.error('Error!', error.message))
+    })
+    </script>
+</body>
+</html>
