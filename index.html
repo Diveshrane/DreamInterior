@@ -12,32 +12,36 @@
     <meta property="og:url" content="https://dreaminterior.co.in/" />
     <meta property="og:type" content="website" />
 
-    <title>Dream Interior</title>
-    <!-- <title>Interior Designer in Mumbai | Home Interior Design & Installation</title> -->
-    <link href="/src/output.css" rel="stylesheet"> <!-- tailwind css style sheet -->
-    <link rel="stylesheet" href="/src/input.css"> <!-- main style sheet -->
-
-    <!-- font links -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-
-    <!-- Google tag (gtag.js) -->
+<!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-RM7JVD8TV4"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-    
       gtag('config', 'G-RM7JVD8TV4');
     </script>
+
+<!-- page title -->
+    <title>Dream Interior</title>
+    
+<!-- styling links -->
+    <link rel="stylesheet" href="/Style/css/output.css" > <!-- tailwind css style sheet -->
+    <link rel="stylesheet" href="/Style/css/input.css"> <!-- main style sheet -->
+
+<!-- font links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    
 </head>
 <body>
-    <!-- navigaition bar -->
+
+<!-- Navigation Bar -->
     <nav class="navBar text-white " id="navBar">
-        <div class="logo">
-            <!-- navbar logo -->
-             <a href="index.html#home">
+        <!-- Brand logo & hamburger icon part -->
+        <div class="brandLogo_HamburgerIcon">
+            <!-- Navbar logo -->
+            <a href="/index.html#home">
             <svg class="logoIcon" width="93" height="22" viewBox="0 0 93 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M8.51499 6.26378V7.82463H8.21044V9.95652L16.3952 2L23.6283 9.2332L32.6506 18.1415H28.5392V16.5806L16.3952 4.58872L4.28935 16.5045V18.1415H0.0256348L5.27914 13.0782V7.82463H4.93652V6.26378H8.51499Z" fill="white"/>
                 <rect x="13.1968" y="12.0498" width="2.81709" height="2.81714" fill="white"/>
@@ -48,20 +52,19 @@
                 <path d="M40.2936 12.66V21H38.9256V12.66H40.2936ZM48.9417 21H47.5737L43.4577 14.772V21H42.0897V12.648H43.4577L47.5737 18.864V12.648H48.9417V21ZM56.1261 12.66V13.776H53.9061V21H52.5381V13.776H50.3061V12.66H56.1261ZM58.8796 13.764V16.212H61.7596V17.328H58.8796V19.884H62.1196V21H57.5116V12.648H62.1196V13.764H58.8796ZM68.1365 21L66.2165 17.664H65.1725V21H63.8045V12.66H66.6845C67.3245 12.66 67.8645 12.772 68.3045 12.996C68.7525 13.22 69.0845 13.52 69.3005 13.896C69.5245 14.272 69.6365 14.692 69.6365 15.156C69.6365 15.7 69.4765 16.196 69.1565 16.644C68.8445 17.084 68.3605 17.384 67.7045 17.544L69.7685 21H68.1365ZM65.1725 16.572H66.6845C67.1965 16.572 67.5805 16.444 67.8365 16.188C68.1005 15.932 68.2325 15.588 68.2325 15.156C68.2325 14.724 68.1045 14.388 67.8485 14.148C67.5925 13.9 67.2045 13.776 66.6845 13.776H65.1725V16.572ZM72.7546 12.66V21H71.3866V12.66H72.7546ZM78.3546 21.084C77.5786 21.084 76.8626 20.904 76.2066 20.544C75.5586 20.176 75.0426 19.668 74.6586 19.02C74.2826 18.364 74.0946 17.628 74.0946 16.812C74.0946 15.996 74.2826 15.264 74.6586 14.616C75.0426 13.968 75.5586 13.464 76.2066 13.104C76.8626 12.736 77.5786 12.552 78.3546 12.552C79.1386 12.552 79.8546 12.736 80.5026 13.104C81.1586 13.464 81.6746 13.968 82.0506 14.616C82.4266 15.264 82.6146 15.996 82.6146 16.812C82.6146 17.628 82.4266 18.364 82.0506 19.02C81.6746 19.668 81.1586 20.176 80.5026 20.544C79.8546 20.904 79.1386 21.084 78.3546 21.084ZM78.3546 19.896C78.9066 19.896 79.3986 19.772 79.8306 19.524C80.2626 19.268 80.5986 18.908 80.8386 18.444C81.0866 17.972 81.2106 17.428 81.2106 16.812C81.2106 16.196 81.0866 15.656 80.8386 15.192C80.5986 14.728 80.2626 14.372 79.8306 14.124C79.3986 13.876 78.9066 13.752 78.3546 13.752C77.8026 13.752 77.3106 13.876 76.8786 14.124C76.4466 14.372 76.1066 14.728 75.8586 15.192C75.6186 15.656 75.4986 16.196 75.4986 16.812C75.4986 17.428 75.6186 17.972 75.8586 18.444C76.1066 18.908 76.4466 19.268 76.8786 19.524C77.3106 19.772 77.8026 19.896 78.3546 19.896ZM88.2928 21L86.3728 17.664H85.3288V21H83.9608V12.66H86.8408C87.4808 12.66 88.0208 12.772 88.4608 12.996C88.9088 13.22 89.2408 13.52 89.4568 13.896C89.6808 14.272 89.7928 14.692 89.7928 15.156C89.7928 15.7 89.6328 16.196 89.3128 16.644C89.0008 17.084 88.5168 17.384 87.8608 17.544L89.9248 21H88.2928ZM85.3288 16.572H86.8408C87.3528 16.572 87.7368 16.444 87.9928 16.188C88.2568 15.932 88.3888 15.588 88.3888 15.156C88.3888 14.724 88.2608 14.388 88.0048 14.148C87.7488 13.9 87.3608 13.776 86.8408 13.776H85.3288V16.572ZM92.0948 21.084C91.8468 21.084 91.6388 21 91.4708 20.832C91.3028 20.664 91.2188 20.456 91.2188 20.208C91.2188 19.96 91.3028 19.752 91.4708 19.584C91.6388 19.416 91.8468 19.332 92.0948 19.332C92.3348 19.332 92.5388 19.416 92.7068 19.584C92.8748 19.752 92.9588 19.96 92.9588 20.208C92.9588 20.456 92.8748 20.664 92.7068 20.832C92.5388 21 92.3348 21.084 92.0948 21.084Z" fill="#73946B"/>
             </svg>
             </a>
-
-            <!-- hamburger icon -->
+            <!-- Hamburger icon (hidden) -->
             <div id="hamb" class="ham">
                 <div id="firstLine" class="hamLine firstLine"></div>
                 <div id="secondLine" class="hamLine secondLine"></div>
             </div>
         </div>
-        <!-- navigation list section -->
+        <!-- Navigation manu list -->
         <div class="sectionList" id="sectionList">
             <ul class="navList">
-                <li class ="closeHamb" ><a href="index.html#home" class="design uppercase ">Home</a></li>
-                <li class ="closeHamb" ><a href="index.html#ourDesign" class="design uppercase ">Designs</a></li>
-                <li class ="closeHamb" ><a href="index.html#hiw" class="HowTiWorks uppercase">How it works</a></li>
-                <li class ="closeHamb" ><a href="/src/refferEarn.html" class="referNEarn uppercase ">Refer & Earn</a></li>
+                <li class ="closeHamb" ><a href="/index.html#home" class="design uppercase ">Home</a></li>
+                <li class ="closeHamb" ><a href="/index.html#ourDesign" class="design uppercase ">Designs</a></li>
+                <li class ="closeHamb" ><a href="/index.html#hiw" class="HowTiWorks uppercase">How it works</a></li>
+                <li class ="closeHamb" ><a href="/Refer-And-Earn.html" class="referNEarn uppercase ">Refer & Earn</a></li>
                 <li id="cityList" class="cityList">
                     <a class="cityListHed uppercase">Cites <p id="DropDownIcon" class="DropDownIcon">></p></a><br>
                     <div id="dropDown" class="dropDown">
@@ -72,23 +75,23 @@
                         <p  class="city">Delhi</p>
                     </div>
                 </li>
-                <li class ="closeHamb"><a href="index.html#about" class="aboutUs uppercase">About us</a></li>
+                <li class ="closeHamb"><a href="/index.html#about" class="aboutUs uppercase">About us</a></li>
             </ul>
         </div>
     </nav>
 
-    <!-- hero section -->
+<!-- Hero section -->
     <section class="heroContaintBox text-black uppercase" id="home">
         <div class="heroContaint">
             <h1 class="heroHed font-bold text-white">design your <span class="text-[#73946B]">dream home</span> </h1>  
             <p class="heroPara text-white text-center">we create beautiful and functional spaces that reflect your style.</p>
             <div class="getStrBtnSec">
-                <a href="/src/registrationForm.html"><button class="getStrBtn p-2 mt-5 w-[200px] rounded-[50px] bg-[#D2D0A0]"> Get started </button></a>
+                <a href="/Registration-form.html"><button class="getStrBtn p-2 mt-5 w-[200px] rounded-[50px] bg-[#D2D0A0]"> Get started </button></a>
             </div>
         </div>
     </section>
 
-    <!-- 'what we do' section -->
+<!-- 'what we do' section -->
     <section class="whatWeDo flex items-center justify-center text-center h-[20vh]">
         <div class="oneLinerContaint">
             <h1 class="allHeading" >What We Do</h1>
@@ -96,7 +99,7 @@
         </div>
     </section>
 
-    <!-- 'why choose us' section -->
+<!-- 'why choose us' section -->
     <section class="whyChooseUs">
         <div class="whyChooseUsContaint">
             <h1 class="allHeading whyChooseUsHed text-center text-white mt-5">Why Choose Us</h1>
@@ -163,7 +166,7 @@
         </div>
     </section>
 
-    <!-- 'our designs' section -->
+<!-- 'our designs' section -->
     <section class="ourDesign" id="ourDesign">
         <div class="ourDesignContaint">
             <div class="bigText">
@@ -175,12 +178,12 @@
                             <path fill="#fff"  d="M25 2.08325C29.5325 2.08325 33.9632 3.42729 37.7318 5.94541C41.5005 8.46352 44.4377 12.0426 46.1722 16.2301C47.9068 20.4176 48.3606 25.0253 47.4763 29.4707C46.5921 33.9161 44.4095 37.9995 41.2045 41.2045C37.9996 44.4094 33.9162 46.592 29.4708 47.4762C25.0254 48.3605 20.4177 47.9067 16.2302 46.1722C12.0427 44.4376 8.46361 41.5004 5.9455 37.7317C3.42738 33.9631 2.08334 29.5324 2.08334 24.9999C2.08334 18.922 4.49777 13.0931 8.79548 8.79539C13.0932 4.49768 18.9221 2.08325 25 2.08325ZM18.4375 26.4791L28.6042 36.6458C28.7978 36.841 29.0283 36.996 29.2821 37.1018C29.536 37.2075 29.8083 37.262 30.0833 37.262C30.3584 37.262 30.6307 37.2075 30.8845 37.1018C31.1384 36.996 31.3688 36.841 31.5625 36.6458C31.7578 36.4521 31.9128 36.2217 32.0185 35.9678C32.1243 35.7139 32.1788 35.4416 32.1788 35.1666C32.1788 34.8916 32.1243 34.6193 32.0185 34.3654C31.9128 34.1115 31.7578 33.8811 31.5625 33.6874L22.9167 24.9999L31.5625 16.3124C31.7568 16.1182 31.9108 15.8876 32.016 15.6338C32.1211 15.38 32.1752 15.108 32.1752 14.8333C32.1752 14.5585 32.1211 14.2865 32.016 14.0327C31.9108 13.7789 31.7568 13.5483 31.5625 13.3541C31.3683 13.1598 31.1377 13.0058 30.8839 12.9006C30.6301 12.7955 30.358 12.7414 30.0833 12.7414C29.8086 12.7414 29.5366 12.7955 29.2828 12.9006C29.029 13.0058 28.7984 13.1598 28.6042 13.3541L18.4375 23.5208C18.2422 23.7144 18.0873 23.9448 17.9815 24.1987C17.8757 24.4526 17.8213 24.7249 17.8213 24.9999C17.8213 25.2749 17.8757 25.5472 17.9815 25.8011C18.0873 26.055 18.2422 26.2854 18.4375 26.4791Z" />
                         </svg>
                         <div class="slider">
-                            <a href="/src/bedRoom.html"><div class="shdw designSec bedRoomSec"><h1 class="designHed uppercase">Bedroom</h1></div></a>
-                            <a href="/src/kitchen.html"><div class="shdw designSec ketchenSec"><h1 class="designHed uppercase">Kitchen</h1></div></a>
-                            <a href="/src/hall.html"><div class="shdw designSec hallSec"><h1 class="designHed uppercase">Hall</h1></div></a>
-                            <a href="/src/kidsBedroom.html"><div class="shdw designSec kidsSec"><h1 class="designHed uppercase">Kids Bedroom</h1></div></a>
-                            <a href="/src/wardrobe.html"><div class="shdw designSec wardrobeSec"><h1 class="designHed uppercase">Wardrobe</h1></div></a>
-                            <a href="/src/doors.html"><div class="shdw designSec outerSec"><h1 class="designHed uppercase">Doors</h1></div></a>
+                            <a href="/Our-Designs/Bedroom-Designs.html"><div class="shdw designSec bedRoomSec"><h1 class="designHed uppercase">Bedroom</h1></div></a>
+                            <a href="/Our-Designs/Kitchen-Designs.html"><div class="shdw designSec kitchenSec"><h1 class="designHed uppercase">Kitchen</h1></div></a>
+                            <a href="/Our-Designs/Hall-Designs.html"><div class="shdw designSec hallSec"><h1 class="designHed uppercase">Hall</h1></div></a>
+                            <a href="/Our-Designs/Kids-Bedroom-Designs.html"><div class="shdw designSec kidsSec"><h1 class="designHed uppercase">Kids Bedroom</h1></div></a>
+                            <a href="/Our-Designs/Wardrobe-Designs.html"><div class="shdw designSec wardrobeSec"><h1 class="designHed uppercase">Wardrobe</h1></div></a>
+                            <a href="/Our-Designs/Door-Designs.html"><div class="shdw designSec doorSec"><h1 class="designHed uppercase">Doors</h1></div></a>
                         </div>
                         <svg id="forwardScroll" width="30" height="30" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg"> <!-- right slider icon -->
                             <rect style="fill: #2a2a2a;" x="18.3333" y="10" width="15.8333" height="30.8333" fill="#537D5D"/>
@@ -191,7 +194,7 @@
     </section>
     <hr>
 
-    <!-- 'how it works' section -->
+<!-- 'how it works' section -->
     <section class="howItWorks" id="hiw">
         <!-- how it works heading -->
         <h1 class="allHeading HIWhed text-center">How It Works</h1>
@@ -223,7 +226,7 @@
                     </svg>
                </div>
                  <p class="firstStepPara"><!--Click on ' Get started '<br> button  & -->Register yourself.</p> 
-                <a href="/src/registrationForm.html"><button class="firstStepBtn bg-[#D2D0A0] ">Register Now</button></a>
+                <a href="/Registration-form.html"><button class="firstStepBtn bg-[#D2D0A0] ">Register Now</button></a>
                 <h1 class="steps">step 1</h1>
             </div>
 
@@ -748,12 +751,12 @@
         </div>
         <!-- get started button of how it works -->
         <div class="bookButton">
-            <a href="/src/registrationForm.html"><button class="getStarted2 p-2 w-[200px] rounded-[50px] bg-[#D2D0A0] ">Get started</button></a>
+            <a href="/Registration-form.html"><button class="getStarted2 p-2 w-[200px] rounded-[50px] bg-[#D2D0A0] ">Get started</button></a>
         </div>
     </section>
     <hr>
 
-    <!-- about section -->
+<!-- about section -->
     <section class="about" id="about">
         <div class="aboutContaint">
             <h1 class="allHeading aboutHed text-center">About Us</h1>
@@ -766,8 +769,7 @@
         </div>
     </section>
 
-
-    <!-- footer section -->
+<!-- footer section -->
     <footer>
         <div class="aboutBrand">
             <div class="aboutBrandContaint">
@@ -844,8 +846,8 @@
         </div>
     </footer>   
     
-    <!-- javaScript file -->
-    <script src="/src/script.js">
+<!-- javaScript -->
+    <script src="/Script/script.js">
     </script>   
 </body>
 </html>

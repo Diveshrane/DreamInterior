@@ -3,19 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="./output.css" rel="stylesheet">
-    <link rel="stylesheet" href="input.css">
+
+<!-- Page title-->
+    <title>Wardrobe Designs</title>
+
+<!-- Styling links -->
+    <link rel="stylesheet" href="/Style/css/output.css" > <!-- tailwind css style sheet -->
+    <link rel="stylesheet" href="/Style/css/input.css"> <!-- main style sheet -->
+    
+<!-- Font links -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- navigaition bar -->
+
+<!-- Navigation Bar -->
     <nav class="navBar text-white " id="navBar">
-        <div class="logo">
-            <!-- navbar logo -->
-             <a href="index.html#home">
+        <!-- Brand logo & hamburger icon part -->
+        <div class="brandLogo_HamburgerIcon">
+            <!-- Navbar logo -->
+            <a href="/index.html#home">
             <svg class="logoIcon" width="93" height="22" viewBox="0 0 93 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M8.51499 6.26378V7.82463H8.21044V9.95652L16.3952 2L23.6283 9.2332L32.6506 18.1415H28.5392V16.5806L16.3952 4.58872L4.28935 16.5045V18.1415H0.0256348L5.27914 13.0782V7.82463H4.93652V6.26378H8.51499Z" fill="white"/>
                 <rect x="13.1968" y="12.0498" width="2.81709" height="2.81714" fill="white"/>
@@ -26,18 +34,19 @@
                 <path d="M40.2936 12.66V21H38.9256V12.66H40.2936ZM48.9417 21H47.5737L43.4577 14.772V21H42.0897V12.648H43.4577L47.5737 18.864V12.648H48.9417V21ZM56.1261 12.66V13.776H53.9061V21H52.5381V13.776H50.3061V12.66H56.1261ZM58.8796 13.764V16.212H61.7596V17.328H58.8796V19.884H62.1196V21H57.5116V12.648H62.1196V13.764H58.8796ZM68.1365 21L66.2165 17.664H65.1725V21H63.8045V12.66H66.6845C67.3245 12.66 67.8645 12.772 68.3045 12.996C68.7525 13.22 69.0845 13.52 69.3005 13.896C69.5245 14.272 69.6365 14.692 69.6365 15.156C69.6365 15.7 69.4765 16.196 69.1565 16.644C68.8445 17.084 68.3605 17.384 67.7045 17.544L69.7685 21H68.1365ZM65.1725 16.572H66.6845C67.1965 16.572 67.5805 16.444 67.8365 16.188C68.1005 15.932 68.2325 15.588 68.2325 15.156C68.2325 14.724 68.1045 14.388 67.8485 14.148C67.5925 13.9 67.2045 13.776 66.6845 13.776H65.1725V16.572ZM72.7546 12.66V21H71.3866V12.66H72.7546ZM78.3546 21.084C77.5786 21.084 76.8626 20.904 76.2066 20.544C75.5586 20.176 75.0426 19.668 74.6586 19.02C74.2826 18.364 74.0946 17.628 74.0946 16.812C74.0946 15.996 74.2826 15.264 74.6586 14.616C75.0426 13.968 75.5586 13.464 76.2066 13.104C76.8626 12.736 77.5786 12.552 78.3546 12.552C79.1386 12.552 79.8546 12.736 80.5026 13.104C81.1586 13.464 81.6746 13.968 82.0506 14.616C82.4266 15.264 82.6146 15.996 82.6146 16.812C82.6146 17.628 82.4266 18.364 82.0506 19.02C81.6746 19.668 81.1586 20.176 80.5026 20.544C79.8546 20.904 79.1386 21.084 78.3546 21.084ZM78.3546 19.896C78.9066 19.896 79.3986 19.772 79.8306 19.524C80.2626 19.268 80.5986 18.908 80.8386 18.444C81.0866 17.972 81.2106 17.428 81.2106 16.812C81.2106 16.196 81.0866 15.656 80.8386 15.192C80.5986 14.728 80.2626 14.372 79.8306 14.124C79.3986 13.876 78.9066 13.752 78.3546 13.752C77.8026 13.752 77.3106 13.876 76.8786 14.124C76.4466 14.372 76.1066 14.728 75.8586 15.192C75.6186 15.656 75.4986 16.196 75.4986 16.812C75.4986 17.428 75.6186 17.972 75.8586 18.444C76.1066 18.908 76.4466 19.268 76.8786 19.524C77.3106 19.772 77.8026 19.896 78.3546 19.896ZM88.2928 21L86.3728 17.664H85.3288V21H83.9608V12.66H86.8408C87.4808 12.66 88.0208 12.772 88.4608 12.996C88.9088 13.22 89.2408 13.52 89.4568 13.896C89.6808 14.272 89.7928 14.692 89.7928 15.156C89.7928 15.7 89.6328 16.196 89.3128 16.644C89.0008 17.084 88.5168 17.384 87.8608 17.544L89.9248 21H88.2928ZM85.3288 16.572H86.8408C87.3528 16.572 87.7368 16.444 87.9928 16.188C88.2568 15.932 88.3888 15.588 88.3888 15.156C88.3888 14.724 88.2608 14.388 88.0048 14.148C87.7488 13.9 87.3608 13.776 86.8408 13.776H85.3288V16.572ZM92.0948 21.084C91.8468 21.084 91.6388 21 91.4708 20.832C91.3028 20.664 91.2188 20.456 91.2188 20.208C91.2188 19.96 91.3028 19.752 91.4708 19.584C91.6388 19.416 91.8468 19.332 92.0948 19.332C92.3348 19.332 92.5388 19.416 92.7068 19.584C92.8748 19.752 92.9588 19.96 92.9588 20.208C92.9588 20.456 92.8748 20.664 92.7068 20.832C92.5388 21 92.3348 21.084 92.0948 21.084Z" fill="#73946B"/>
             </svg>
             </a>
-
+            <!-- Hamburger icon (hidden) -->
             <div id="hamb" class="ham">
                 <div id="firstLine" class="hamLine firstLine"></div>
                 <div id="secondLine" class="hamLine secondLine"></div>
             </div>
         </div>
+        <!-- Navigation manu list -->
         <div class="sectionList" id="sectionList">
             <ul class="navList">
-                <li class ="closeHamb" ><a href="/src/index.html#home" class="design uppercase ">Home</a></li>
-                <li class ="closeHamb" ><a href="/src/index.html#ourDesign" class="design uppercase ">Designs</a></li>
-                <li class ="closeHamb" ><a href="/src/index.html#hiw" class="HowTiWorks uppercase">How it works</a></li>
-                <li class ="closeHamb" ><a href="refferEarn.html" class="referNEarn uppercase ">Refer & Earn</a></li>
+                <li class ="closeHamb" ><a href="/index.html#home" class="design uppercase ">Home</a></li>
+                <li class ="closeHamb" ><a href="/index.html#ourDesign" class="design uppercase ">Designs</a></li>
+                <li class ="closeHamb" ><a href="/index.html#hiw" class="HowTiWorks uppercase">How it works</a></li>
+                <li class ="closeHamb" ><a href="/Refer-And-Earn.html" class="referNEarn uppercase ">Refer & Earn</a></li>
                 <li id="cityList" class="cityList">
                     <a class="cityListHed uppercase">Cites <p id="DropDownIcon" class="DropDownIcon">></p></a><br>
                     <div id="dropDown" class="dropDown">
@@ -48,27 +57,28 @@
                         <p  class="city">Delhi</p>
                     </div>
                 </li>
-                <li class ="closeHamb"><a href="/src/index.html#about" class="aboutUs uppercase">About us</a></li>
+                <li class ="closeHamb"><a href="/index.html#about" class="aboutUs uppercase">About us</a></li>
             </ul>
         </div>
     </nav>
 
-
-    <div class="allDesingsSec">
+<!-- All designs section -->
+    <section class="allDesingsSec">
         <h1 class="allDesignHed allHeading">Wardrobe Designs</h1>
         <div class="allDesigns">
-            <div class="bedroom" style="background-image: url(/src/Images/WardrobeDesings/Wardrobe1.jpg);"></div>
-            <div class="bedroom" style="background-image: url(/src/Images/WardrobeDesings/Wardrobe2.jpg);"></div>
-            <div class="bedroom" style="background-image: url(/src/Images/WardrobeDesings/Wardrobe3.jpg);"></div>
-            <div class="bedroom" style="background-image: url(/src/Images/WardrobeDesings/Wardrobe4.jpg);"></div>
-            <div class="bedroom" style="background-image: url(/src/Images/WardrobeDesings/Wardrobe5.jpg);"></div>
-            <div class="bedroom" style="background-image: url(/src/Images/WardrobeDesings/Wardrobe6.jpg);"></div>
-            <div class="bedroom" style="background-image: url(/src/Images/WardrobeDesings/Wardrobe7.jpg);"></div>
-            <div class="bedroom" style="background-image: url(/src/Images/WardrobeDesings/Wardrobe8.jpg);"></div>
-            <div class="bedroom" style="background-image: url(/src/Images/WardrobeDesings/Wardrobe9.jpg);"></div>
+            <img class="design-image" src="/Images/Wardrobe-Desings/Wardrobe-Design-1.jpg" alt="Wardrobe-design">
+            <img class="design-image" src="/Images/Wardrobe-Desings/Wardrobe-Design-2.jpg" alt="Wardrobe-design">
+            <img class="design-image" src="/Images/Wardrobe-Desings/Wardrobe-Design-3.jpg" alt="Wardrobe-design">
+            <img class="design-image" src="/Images/Wardrobe-Desings/Wardrobe-Design-4.jpg" alt="Wardrobe-design">
+            <img class="design-image" src="/Images/Wardrobe-Desings/Wardrobe-Design-5.jpg" alt="Wardrobe-design">
+            <img class="design-image" src="/Images/Wardrobe-Desings/Wardrobe-Design-6.jpg" alt="Wardrobe-design">
+            <img class="design-image" src="/Images/Wardrobe-Desings/Wardrobe-Design-7.jpg" alt="Wardrobe-design">
+            <img class="design-image" src="/Images/Wardrobe-Desings/Wardrobe-Design-8.jpg" alt="Wardrobe-design">
+            <img class="design-image" src="/Images/Wardrobe-Desings/Wardrobe-Design-9.jpg" alt="Wardrobe-design">
         </div>
         <div class="backbtnSec">
-            <a class="backBtn" href="/src/index.html#ourDesign"><svg width="15" height="15" viewBox="0 0 287 287" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <a class="backBtn" href="/index.html#ourDesign">
+                <svg width="15" height="15" viewBox="0 0 287 287" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g clip-path="url(#clip0_417_13)">
                         <path d="M198.748 35.7555C192.888 29.8959 183.441 29.8959 177.581 35.7555L78.2075 135.129C73.5438 139.793 73.5438 147.327 78.2075 151.991L177.581 251.364C183.441 257.224 192.888 257.224 198.748 251.364C204.607 245.505 204.607 236.058 198.748 230.198L112.169 143.5L198.867 56.8022C204.607 51.0622 204.607 41.4955 198.748 35.7555Z"/>
                     </g>
@@ -77,11 +87,13 @@
                         <rect width="287" height="287" fill="white"/>
                     </clipPath>
                     </defs>
-                </svg>Back</a>
+                </svg>Back
+            </a>
         </div>
-    </div>
+    </section>
 
-    <script src="script.js">
+<!-- JavaScript -->
+    <script src="/Script/script.js">
     </script>
 </body>
 </html>
